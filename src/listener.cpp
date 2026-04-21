@@ -34,7 +34,7 @@ public:
       [this](rclcpp::QOSLivelinessChangedInfo & event) {
         RCLCPP_WARN(
           this->get_logger(),
-          "PANIC: liveliness changed | alive_count=%d not_alive_count=%d alive_count_change=%d not_alive_count_change=%d",
+          "liveliness changed | alive_count=%d not_alive_count=%d alive_count_change=%d not_alive_count_change=%d",
           event.alive_count,
           event.not_alive_count,
           event.alive_count_change,
